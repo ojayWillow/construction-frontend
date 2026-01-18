@@ -1,5 +1,6 @@
 import { Section } from '@/components/ui/Section';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
+import { ContactForm } from '@/components/forms/ContactForm';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -87,76 +88,12 @@ export default function ContactPage() {
 
         {/* Contact Form and Map Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form Placeholder */}
+          {/* Contact Form */}
           <div>
             <h2 className="text-3xl font-bold text-secondary mb-6">Sūtīt Ziņu</h2>
             <Card padding="lg">
               <CardContent>
-                <div className="space-y-6">
-                  {/* Name Field */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Vārds, Uzvārds *
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Jānis Bērziņš"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                      disabled
-                    />
-                  </div>
-
-                  {/* Email Field */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      E-pasts *
-                    </label>
-                    <input
-                      type="email"
-                      placeholder="janis@example.com"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                      disabled
-                    />
-                  </div>
-
-                  {/* Phone Field */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Tālrunis *
-                    </label>
-                    <input
-                      type="tel"
-                      placeholder="+371 20 000 000"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                      disabled
-                    />
-                  </div>
-
-                  {/* Message Field */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Ziņa *
-                    </label>
-                    <textarea
-                      placeholder="Aprakstiet savu projektu vai jautājumu..."
-                      rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                      disabled
-                    />
-                  </div>
-
-                  {/* Submit Button Placeholder */}
-                  <button
-                    disabled
-                    className="w-full bg-gray-300 text-gray-500 px-8 py-4 rounded-lg font-medium cursor-not-allowed"
-                  >
-                    Forma tiks aktivizēta Phase 3
-                  </button>
-
-                  <p className="text-sm text-gray-500 text-center">
-                    * Obligātie lauki
-                  </p>
-                </div>
+                <ContactForm />
               </CardContent>
             </Card>
           </div>
