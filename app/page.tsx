@@ -29,11 +29,11 @@ export default function Home() {
       <Section id="home" background="gradient" padding="xl">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="mb-6">
-              BūvcenuGuru - Jūsu Partņeris Būvniecībā
+            <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl">
+              BūvcenuGuru
             </h1>
-            <p className="text-xl text-gray-100">
-              Profesionāli būvniecības pakalpojumi un AI tehnoļoģijas vienā vietā
+            <p className="text-xl md:text-2xl text-gray-100">
+              Profesionāli būvniecības pakalpojumi un AI tehnoloģijas vienā vietā
             </p>
           </div>
 
@@ -81,10 +81,10 @@ export default function Home() {
             <span className="font-semibold">Jauns!</span>
           </div>
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            AI Platforma Būvniecībai
+            AI Platforma Būvniecībā
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Modernas tehnoloģijas, kas palīdz ietaupīt laiku un naudu būvmateriālu iegādē un projektu plānošanā
+            Modernās tehnoloģijas, kas palīdz ietaupīt laiku un naudu būvmateriālu iegādē un projektu plānošanā
           </p>
         </div>
 
