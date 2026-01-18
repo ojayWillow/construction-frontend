@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { 
   Calculator, 
@@ -180,7 +182,7 @@ export default function AIPlatformPage() {
           
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="text-lg leading-relaxed">
-              <strong>BūvcenuGuru</strong> ir moderna AI platformā, kas palīdz būvniekiem, 
+              <strong>BūvcenuGuru</strong> ir moderna AI platforma, kas palīdz būvniekiem, 
               remontētājiem un mājas saimniekiem ietaupīt laiku un naudu būvmateriālu 
               iegādē un projektu plānošanā.
             </p>
@@ -234,7 +236,7 @@ export default function AIPlatformPage() {
                 Vai tas ir bez maksas?
               </summary>
               <p className="mt-4 text-gray-700 pl-7">
-                Jā! BūvcenuGuru pamata funkcijas ir pilnīgi bezmaksas. Telegram bots, 
+                Jā! BūvcenuGuru pamata funkcijas ir pilnībā bezmaksas. Telegram bots, 
                 cenu salīdzināšana un kalkulatori pieejami ikvienam bez maksas.
               </p>
             </details>
