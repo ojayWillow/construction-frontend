@@ -34,27 +34,20 @@ export default function Home() {
             Kvalitatīvi būvniecības pakalpojumi Latvijā. Jaunbūves, renovācija un projektēšana.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="primary" 
-              size="lg"
-              onClick={() => {
-                const element = document.querySelector('#contact');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Sazināties
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-secondary"
-              onClick={() => {
-                const element = document.querySelector('#services');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Uzzināt vairāk
-            </Button>
+            <a href="#contact">
+              <Button variant="primary" size="lg">
+                Sazināties
+              </Button>
+            </a>
+            <a href="#services">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-secondary"
+              >
+                Uzzināt vairāk
+              </Button>
+            </a>
           </div>
         </div>
       </Section>
@@ -91,9 +84,11 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Sazinieties ar mums šodien un saņemiet bezmaksas konsultāciju par jūsu būvniecības projektu!
           </p>
-          <Button variant="primary" size="lg">
-            Sazināties Tagad
-          </Button>
+          <a href="#contact">
+            <Button variant="primary" size="lg">
+              Sazināties Tagad
+            </Button>
+          </a>
         </div>
       </Section>
     </main>
