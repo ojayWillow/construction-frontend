@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Kontakti - BūvcenuGuru',
-  description: 'Sazinieties ar BūvcenuGuru - telefons, e-pasts, adrese un darba laiks.',
+  description: 'Sazinieties ar BūvcenuGuru - telēfons, e-pasts, adrese un darba laiks.',
 };
 
 export default function ContactPage() {
@@ -56,7 +56,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-6 text-white">Sazinieties ar Mums</h1>
           <p className="text-xl text-gray-100">
-            Mēs vienmēr priecājamies sadzirdēt no jums! Uzdodiet jautājumu vai pieprasiet cenu piedāvājumu.
+            Mēs vienmēr priecājamies sadzirdēt no jums! Uzdodiet jautājumu vai pieprasiēt cenu piedāvājumu.
           </p>
         </div>
       </Section>
@@ -100,8 +100,8 @@ export default function ContactPage() {
 
           {/* Map Placeholder */}
           <div>
-            <h2 className="text-3xl font-bold text-secondary mb-6">Mūsu Atrašanās Vieta</h2>
-            <Card padding="none" className="overflow-hidden h-[600px]">
+            <h2 className="text-3xl font-bold text-secondary mb-6">Mūsu Atrasanās Vieta</h2>
+            <div className="overflow-hidden h-[600px] rounded-xl border border-gray-200">
               <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                 <div className="text-center p-8">
                   <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
@@ -114,7 +114,7 @@ export default function ContactPage() {
                   </p>
                 </div>
               </div>
-            </Card>
+            </div>
           </div>
         </div>
       </Section>
@@ -124,7 +124,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="mb-6 text-secondary">Vēlaties sarunāt tikšanos?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Zvaniet mums tieši vai rakstiet e-pastu, un mēs sazināsimies ar jums 24 stundu laikā!
+            Zvaniet mums tiesji vai rakstiet e-pastu, un mēs sazināsimies ar jums 24 stundu laikā!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
