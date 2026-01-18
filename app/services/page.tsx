@@ -1,3 +1,5 @@
+'use client';
+
 import { Section } from '@/components/ui/Section';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/Card';
 import { ButtonLink } from '@/components/ui/ButtonLink';
@@ -17,13 +19,7 @@ import {
   Building,
   Zap
 } from 'lucide-react';
-import type { Metadata };
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Pakalpojumi - BūvcenuGuru',
-  description: 'Mūsu būvniecības pakalpojumi un AI tehnoloģiju ieviešana: jaunbūves, renovācija, projektēšana, AI chatboti un automatizācija.',
-};
 
 export default function ServicesPage() {
   const constructionServices = [
@@ -271,7 +267,7 @@ export default function ServicesPage() {
             AI Tehnoloģiju Ieviešana
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Palīdzēsime jūsu biznesam ieviest mākslīgā intelekta risinājumus - no chatbotiem līdz datu analīzei
+            Palīdzēsiem jūsu biznesam ieviest mākslīgā intelekta risinājumus - no chatbotiem līdz datu analīzei
           </p>
         </div>
 
