@@ -29,8 +29,8 @@ export default function Home() {
       <Section id="home" background="gradient" padding="xl">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl">
-              BūvcenuGuru
+            <h1 className="mb-6">
+              BūvcenuGuru - Jūsu Partneris Būvniecībā
             </h1>
             <p className="text-xl md:text-2xl text-gray-100">
               Profesionāli būvniecības pakalpojumi un AI tehnoloģijas vienā vietā
