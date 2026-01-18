@@ -5,7 +5,7 @@ import { Target, Users, Award, Heart, Shield, Zap } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Par Mums - BūvcenuGuru',
+  title: 'Par Mums - Būvcenu Guru',
   description: 'Uzziniet vairāk par BūvcenuGuru - mūsu vēsturi, vērtības un komandu.',
 };
 
@@ -14,32 +14,32 @@ export default function AboutPage() {
     {
       icon: Target,
       title: 'Precizitāte',
-      description: 'Mēs veicam katru darbu ar augšu precizitāti un uzmanību detaļām, lai garantu0113tu izcīlu rezultu0101tu.'
+      description: 'Mēs veicam katru darbu ar augstu precizitāti un uzmanību detaļām, lai garantētu izcilu rezultātu.'
     },
     {
       icon: Shield,
       title: 'Uzticamība',
-      description: 'Jūsu uzticamība ir mūsu prioritu0101te. Mēs pildām soludu012bjumus un ievurojam noteiktos teru012diu0146us.'
+      description: 'Jūsu uzticamība ir mūsu prioritāte. Mēs pildām solījumus un ievērojam noteiktos termiņus.'
     },
     {
       icon: Award,
-      title: 'Kvalitu0101te',
-      description: 'Izmantojam tikai kvalitatuiv012dus materu012diu0101lus un muu017esdienuigas tehnolou011fijas, lai nodrouiu0161inu0101tu ilgmuz012digu012gbu.'
+      title: 'Kvalitāte',
+      description: 'Izmantojam tikai kvalitatīvus materiālus un mūsdienīgas tehnoloģijas, lai nodrošinātu ilgmūžību.'
     },
     {
       icon: Heart,
-      title: 'Apn012emuib012dba',
-      description: 'Katrs projekts mums ir svaruig012ds. Mēs struu0101du0101jam ar profesionuu0101lu012dtuu012di un deduikuu0101ciju.'
+      title: 'Apņemība',
+      description: 'Katrs projekts mums ir svarīgs. Mēs strādājam ar profesionalitāti un dedikāciju.'
     },
     {
       icon: Users,
       title: 'Komandas Darbs',
-      description: 'Mūsu komanda ir mūsu spuuek012ds. Kops012bu mēs sasniedzam lic012deluu0101kus rezultuu0101tus.'
+      description: 'Mūsu komanda ir mūsu spēks. Kopā mēs sasniedzam lielākus rezultātus.'
     },
     {
       icon: Zap,
-      title: 'Inovuu0101cija',
-      description: 'Sekojam juunuu0101ku012dju0101m tendencēm un ieviesuam muu017esdienuigus risinuu0101jumus buu016bvniecutib012duu0101.'
+      title: 'Inovācija',
+      description: 'Sekojam jaunākajām tendencēm un ieviesam mūsdienīgus risinājumus būvniecībā.'
     },
   ];
 
@@ -47,29 +47,29 @@ export default function AboutPage() {
     { number: '200+', label: 'Pabeigti Projekti' },
     { number: '15+', label: 'Gadu Pieredze' },
     { number: '50+', label: 'Komandas Biedri' },
-    { number: '98%', label: 'Apmierinuu0101ti Klienti' },
+    { number: '98%', label: 'Apmierināti Klienti' },
   ];
 
   const team = [
     {
-      name: 'Juu0101nis Buu0113rziu0146u0161',
-      role: 'Valdes Priekuseduu0113tuu0101js',
-      description: '20 gadu pieredze buu016bvniecuib012duu0101 un projektu vadu012dbuibu0101.'
+      name: 'Jānis Bērziņš',
+      role: 'Valdes Priekšsēdētājs',
+      description: '20 gadu pieredze būvniecībā un projektu vadībā.'
     },
     {
-      name: 'Anu0101 Kalniu0146a',
-      role: 'Galvenuu0101 Arhitekte',
-      description: 'Specializuu0113jas muu017esdieniuguu0101 arhitektuuuru0101 un ilgtspuuejuiguu0101 dizainu0101.'
+      name: 'Anna Kalniņa',
+      role: 'Galvenā Arhitekte',
+      description: 'Specializējas mūsdienīgā arhitektūrā un ilgtspējīgā dizainā.'
     },
     {
-      name: 'Muuu0101rtiu0146u0161 Ozolu0161',
-      role: 'Buu016bvdarbu Vadu012dtuu0101js',
-      description: '15 gadu pieredze lielu projektu organizuu0113u0161anu0101 un vadu012dbuibu0101.'
+      name: 'Mārtiņš Ozols',
+      role: 'Būvdarbu Vadītājs',
+      description: '15 gadu pieredze lielu projektu organizēšanā un vadībā.'
     },
     {
-      name: 'Lu012dga Liepa',
-      role: 'Projektu Menauu013dere',
-      description: 'Nodrouiu0161ina efektuivu komunikuu0101ciju starp visuu0101m iesaistituu0101juu0101m pusu0113m.'
+      name: 'Līga Liepa',
+      role: 'Projektu Menedžere',
+      description: 'Nodrošina efektīvu komunikāciju starp visām iesaistītajām pusēm.'
     },
   ];
 
@@ -80,7 +80,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-6 text-white">Par Mums</h1>
           <p className="text-xl text-gray-100">
-            Mēs esam profesionuu0101lu buu016bvniecuib012dbas uzn012duu0113mums ar vairuu0101k neku0101 15 gadu pieredzi Latvijas tirguu016b.
+            Mēs esam profesionāls būvniecības uzņēmums ar vairāk nekā 15 gadu pieredzi Latvijas tirgū.
           </p>
         </div>
       </Section>
@@ -104,22 +104,22 @@ export default function AboutPage() {
       {/* Story Section */}
       <Section background="gray" padding="xl">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12 text-secondary">Mūsu Stuuu0101sts</h2>
+          <h2 className="text-center mb-12 text-secondary">Mūsu Stāsts</h2>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              <strong className="text-secondary">Buu016bvcenuGuru</strong> tika dibinuu0101ts 2010. gaduuu0101 ar muu0113ru0137ki raduit kvalitatuivus un 
-              ilgtspuuejuigus buu016bvniecuib012dbas risinuu0101jumus Latviju0101. Suuu0101kot ku0101 neliela komanda ar lielu0101m ambuciju0101m, 
-              mu0113s esam izauguusi par vienu no vadouau0161ajiem buu016bvniecuib012dbas uzn012duu0113mumiem valu012dstu012b.
+              <strong className="text-secondary">BūvcenuGuru</strong> tika dibināts 2010. gadā ar mērķi radīt kvalitatīvus un 
+              ilgtspējīgus būvniecības risinājumus Latvijā. Sākot kā neliela komanda ar lielām ambīcijām, 
+              mēs esam izauguši par vienu no vadošajiem būvniecības uzņēmumiem valstī.
             </p>
             <p>
-              Muuusu panuukumi pamatojas uz <strong>profesionuualituuti</strong>, <strong>precizituuti</strong> un 
-              <strong> klientu apmierinatuibu</strong>. Katrs projekts tiek uztverts ku0101 unikuu0101la iespeju012dja 
-              raduit kaut ko izc012dilu un ilgmuz012digu012dgu.
+              Mūsu panākumi pamatojas uz <strong>profesionalitāti</strong>, <strong>precizitāti</strong> un 
+              <strong> klientu apmierinātību</strong>. Katrs projekts tiek uztverts kā unikāla iespēja 
+              radīt kaut ko izcilu un ilgmūžīgu.
             </p>
             <p>
-              u0160odien mu0113s lepoujamies ar vairuu0101k neku0101 200 veiksmui012dgi pabeigtu projektu portfeli, 
-              profesionuu0101lu komandu un aug012dstu klientu apmierinatuibu012dbas ruu0101duituu0101ju. Muuusu muu0113ru0137kis - 
-              turpinauit augt un attuistuitiuies, pieduu0101vuu0101jot labuu0101kos risinuu0101jumus muuusu klientiem.
+              Šodien mēs lepojamies ar vairāk nekā 200 veiksmīgi pabeigtu projektu portfeli, 
+              profesionālu komandu un augstu klientu apmierinātības rādītāju. Mūsu mērķis - 
+              turpināt augt un attīstīties, piedāvājot labākos risinājumus mūsu klientiem.
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <Section background="white" padding="xl">
-        <h2 className="text-center mb-12 text-secondary">Muuusu Vuuertuib012dbas</h2>
+        <h2 className="text-center mb-12 text-secondary">Mūsu Vērtības</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((value, index) => {
             const Icon = value.icon;
@@ -150,7 +150,7 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <Section background="gray" padding="xl">
-        <h2 className="text-center mb-12 text-secondary">Muuusu Komanda</h2>
+        <h2 className="text-center mb-12 text-secondary">Mūsu Komanda</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <Card key={index} padding="lg" className="text-center">
@@ -176,12 +176,12 @@ export default function AboutPage() {
       {/* CTA Section */}
       <Section background="white" padding="xl">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="mb-6 text-secondary">Gatavs Suuu0101kt Savu Projektu?</h2>
+          <h2 className="mb-6 text-secondary">Gatavs Sākt Savu Projektu?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Sazinieties ar mums, lai uzzinuu0101tu, ku0101 mu0113s varam palidzuu0113t realizuu0113t juu016bsu sapn012du projektu!
+            Sazinieties ar mums, lai uzzinātu, kā mēs varam palīdzēt realizēt jūsu sapņu projektu!
           </p>
           <ButtonLink href="#contact" variant="primary" size="lg">
-            Sazinauuties ar Mums
+            Sazināties ar Mums
           </ButtonLink>
         </div>
       </Section>
