@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/Button';
+import { ButtonLink } from '@/components/ui/ButtonLink';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
 import { Section } from '@/components/ui/Section';
 import { Building2, Hammer, PenTool } from 'lucide-react';
@@ -34,20 +34,17 @@ export default function Home() {
             Kvalitatīvi būvniecības pakalpojumi Latvijā. Jaunbūves, renovācija un projektēšana.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact">
-              <Button variant="primary" size="lg">
-                Sazināties
-              </Button>
-            </a>
-            <a href="#services">
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-secondary"
-              >
-                Uzzināt vairāk
-              </Button>
-            </a>
+            <ButtonLink href="#contact" variant="primary" size="lg">
+              Sazināties
+            </ButtonLink>
+            <ButtonLink 
+              href="#services"
+              variant="outline" 
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-secondary"
+            >
+              Uzzināt vairāk
+            </ButtonLink>
           </div>
         </div>
       </Section>
@@ -84,11 +81,9 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Sazinieties ar mums šodien un saņemiet bezmaksas konsultāciju par jūsu būvniecības projektu!
           </p>
-          <a href="#contact">
-            <Button variant="primary" size="lg">
-              Sazināties Tagad
-            </Button>
-          </a>
+          <ButtonLink href="#contact" variant="primary" size="lg">
+            Sazināties Tagad
+          </ButtonLink>
         </div>
       </Section>
     </main>
