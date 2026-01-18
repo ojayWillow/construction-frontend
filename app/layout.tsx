@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/sections/Header";
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -16,9 +17,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Construction Company - Professional Building Services",
-  description: "Professional construction services in Latvia. Quality building, renovation, and project management.",
-  keywords: ['construction', 'building', 'renovation', 'Latvia', 'būvniecība'],
+  title: "BūvcenuGuru - Professional Construction Services | Profesionāli Būvniecības Pakalpojumi",
+  description: "Professional construction services in Latvia. Quality building, renovation, and project management. Kvalitatīvi būvniecības pakalpojumi Latvijā.",
+  keywords: ['construction', 'building', 'renovation', 'Latvia', 'būvniecība', 'renovācija', 'projektēšana'],
 };
 
 export default function RootLayout({
@@ -29,7 +30,10 @@ export default function RootLayout({
   return (
     <html lang="lv" className={`${roboto.variable} ${openSans.variable}`}>
       <body className="font-sans antialiased">
-        {children}
+        <Header />
+        <div className="pt-20"> {/* Add padding to account for fixed header */}
+          {children}
+        </div>
       </body>
     </html>
   );
