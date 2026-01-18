@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
     { label: 'Pakalpojumi', href: '/services' },
     { label: 'Par Mums', href: '/about' },
     { label: 'Projekti', href: '#projects' },
-    { label: 'Kontakti', href: '#contact' },
+    { label: 'Kontakti', href: '/contact' },
   ];
 
   // Smooth scroll function for hash links
@@ -96,24 +96,11 @@ export const Header: React.FC = () => {
 
           {/* CTA Button (Desktop) */}
           <div className="hidden md:block">
-            <Button
-              variant="primary"
-              size="md"
-              onClick={() => {
-                // If on home page, scroll to contact
-                if (pathname === '/') {
-                  const element = document.querySelector('#contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                } else {
-                  // Otherwise navigate to home page contact section
-                  window.location.href = '/#contact';
-                }
-              }}
-            >
-              Sazināties
-            </Button>
+            <Link href="/contact">
+              <Button variant="primary" size="md">
+                Sazināties
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -147,24 +134,11 @@ export const Header: React.FC = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button
-                variant="primary"
-                size="md"
-                className="w-full mt-4"
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  if (pathname === '/') {
-                    const element = document.querySelector('#contact');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  } else {
-                    window.location.href = '/#contact';
-                  }
-                }}
-              >
-                Sazināties
-              </Button>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="primary" size="md" className="w-full mt-4">
+                  Sazināties
+                </Button>
+              </Link>
             </div>
           </nav>
         )}
