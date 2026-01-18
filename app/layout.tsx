@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/sections/Header";
+import { Footer } from "@/components/sections/Footer";
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <div className="pt-20"> {/* Add padding to account for fixed header */}
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
