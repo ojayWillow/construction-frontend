@@ -27,32 +27,9 @@ export const Header: React.FC = () => {
     { label: 'Sākums', href: '/' },
     { label: 'Pakalpojumi', href: '/services' },
     { label: 'Par Mums', href: '/about' },
-    { label: 'Projekti', href: '#projects' },
+    { label: 'Projekti', href: '/projects' },
     { label: 'Kontakti', href: '/contact' },
   ];
-
-  // Smooth scroll function for hash links
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    // Only prevent default for hash links
-    if (href.startsWith('#')) {
-      e.preventDefault();
-      setIsMobileMenuOpen(false);
-      
-      if (href === '#home') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        const element = document.querySelector(href);
-        if (element) {
-          const offset = 80; // Header height
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - offset;
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-        }
-      }
-    } else {
-      setIsMobileMenuOpen(false);
-    }
-  };
 
   return (
     <header
@@ -82,7 +59,7 @@ export const Header: React.FC = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
                   'text-gray-700 hover:text-primary font-medium transition-colors relative group',
                   pathname === link.href && 'text-primary'
@@ -125,7 +102,7 @@ export const Header: React.FC = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
                     'text-gray-700 hover:text-primary font-medium transition-colors py-2',
                     pathname === link.href && 'text-primary'
