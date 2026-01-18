@@ -28,6 +28,7 @@ export const Header: React.FC = () => {
     { label: 'Pakalpojumi', href: '/services' },
     { label: 'Par Mums', href: '/about' },
     { label: 'Projekti', href: '/projects' },
+    { label: 'AI Platforma', href: '/ai-platform' },
     { label: 'Kontakti', href: '/contact' },
   ];
 
