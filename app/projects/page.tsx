@@ -143,7 +143,7 @@ export default function ProjectsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="mb-6 text-white">Mūsu Projekti</h1>
           <p className="text-xl text-gray-100 mb-8">
-            Lepojamies ar realizētiem tradicīonāliem būvniecības projektiem UN inovatīviem AI risinājumiem.
+            Lepojamies ar realizētiem tradicīīonāliem būvniecības projektiem UN inovatīviem AI risinājumiem.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
@@ -189,7 +189,7 @@ export default function ProjectsPage() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full mb-4">
             <Building className="w-5 h-5 text-gray-700" />
-            <span className="font-semibold text-gray-700">Tradicīonālie Projekti</span>
+            <span className="font-semibold text-gray-700">Tradicīīonālie Projekti</span>
           </div>
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Būvniecības Projekti
@@ -201,7 +201,7 @@ export default function ProjectsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {constructionProjects.map((project, index) => (
-            <Card key={index} hover padding="none" className="overflow-hidden group">
+            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
               {/* Project Image */}
               <div className="relative h-48 bg-gray-300 overflow-hidden">
                 <img
@@ -217,14 +217,11 @@ export default function ProjectsPage() {
               </div>
 
               {/* Project Info */}
-              <CardHeader>
-                <CardTitle className="text-lg mb-2">{project.title}</CardTitle>
-                <CardDescription className="text-sm mb-3">
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">{project.title}</h3>
+                <p className="text-sm text-gray-600 mb-4">
                   {project.description}
-                </CardDescription>
-              </CardHeader>
-
-              <CardContent>
+                </p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-primary" />
@@ -239,8 +236,8 @@ export default function ProjectsPage() {
                     <span>{project.area}</span>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </Section>
