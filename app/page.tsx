@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <Section background="gradient" padding="xl">
+      <Section id="home" background="gradient" padding="xl">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-6">
             Profesionāla Būvniecība
@@ -34,13 +34,24 @@ export default function Home() {
             Kvalitatīvi būvniecības pakalpojumi Latvijā. Jaunbūves, renovācija un projektēšana.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary" size="lg">
+            <Button 
+              variant="primary" 
+              size="lg"
+              onClick={() => {
+                const element = document.querySelector('#contact');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Sazināties
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="border-white text-white hover:bg-white hover:text-secondary"
+              onClick={() => {
+                const element = document.querySelector('#services');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Uzzināt vairāk
             </Button>
@@ -49,7 +60,7 @@ export default function Home() {
       </Section>
 
       {/* Services Section */}
-      <Section background="white" padding="xl">
+      <Section id="services" background="white" padding="xl">
         <h2 className="text-center mb-12 text-secondary">
           Mūsu Pakalpojumi
         </h2>
@@ -74,7 +85,7 @@ export default function Home() {
       </Section>
 
       {/* Call to Action Section */}
-      <Section background="gray" padding="xl">
+      <Section id="contact" background="gray" padding="xl">
         <div className="text-center">
           <h2 className="mb-6 text-secondary">Gatavs Sākt Projektu?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
